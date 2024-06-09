@@ -16,7 +16,7 @@ extension sensor_msgs {
 	/// 1 and width is the length of the point cloud.
 	/// Describes the channels and their layout in the binary data blob.
 	public struct PointCloud2: MessageWithHeader {
-		public static let md5sum: String = "20e36edd2b5dc7316246fcb0c526081f"
+		public static let md5sum: String = "1158d486dd51d683ce2f1be655c3c181"
 		public static let datatype = "sensor_msgs/PointCloud2"
 		public static let definition = """
 			# This message holds a collection of N-dimensional points, which may
