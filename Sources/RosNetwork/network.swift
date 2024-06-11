@@ -33,9 +33,9 @@ public struct RosNetwork {
         //if let it = remappings["__hostname"] {
          //   host = it
         //} else if 
-        let it = remappings["__ip"] {
+        let it = remappings["__ip"] //{
             host = it
-        }
+        //}
         if let it = remappings["__tcpros_server_port"] {
             guard let tcprosServerPort = UInt16(it) else {
                 fatalError("__tcpros_server_port [\(it)] was not specified as a number within the 0-65535 range")
