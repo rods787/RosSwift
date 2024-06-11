@@ -34,7 +34,7 @@ public struct RosNetwork {
          //   host = it
         //} else if 
         let it = remappings["__ip"] //{
-            host = it
+            host = it!
         //}
         if let it = remappings["__tcpros_server_port"] {
             guard let tcprosServerPort = UInt16(it) else {
