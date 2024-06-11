@@ -41,7 +41,7 @@ public struct RosDuration: DurationBase {
 
         var didSleep = false
         while !Time.gStopped.load(ordering: .relaxed) && Time.now < end {
-            _ = wallSleep(sec: 0, nsec: 1_000)
+            _ = wallSleep(sec: 0, nsec: 1_000_000)
             didSleep = true
             if start.isZero {
                 start = Time.now
